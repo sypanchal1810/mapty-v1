@@ -261,7 +261,9 @@ a:visited {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  align-self: center;
+
+  flex-wrap: wrap;
   position: fixed;
   margin-top: 7rem;
   cursor: pointer;
@@ -327,4 +329,27 @@ a:visited {
   bottom: 0;
   color: #2d3439;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  #width {
+    height: 30vh;
+  }
+  .sidebar {
+    height: 35rem;
+    flex-basis: unset;
+    padding: 0 2rem;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+  .workout {
+    width: 80%;
+    align-self: center;
+    left: 10%;
+  }
 }

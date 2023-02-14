@@ -247,8 +247,8 @@ class App {
         L.popup({
           maxWidth: 250,
           minWidth: 100,
-          closeOnClick: false,
-          autoClose: false,
+          closeOnClick: true,
+          autoClose: true,
           className: `${workout.type}-popup`,
         })
       )
