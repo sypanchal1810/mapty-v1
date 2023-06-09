@@ -1,5 +1,11 @@
 'use strict';
 
+///////////////////////////////////////////////////////////
+// Set current year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
 class Workout {
   date = new Date();
   id = (Date.now() + '').slice(-10);
@@ -245,7 +251,7 @@ class App {
       .addTo(this._map)
       .bindPopup(
         L.popup({
-          maxWidth: 250,
+          maxWidth: 300,
           minWidth: 100,
           closeOnClick: true,
           autoClose: true,

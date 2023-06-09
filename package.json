@@ -1,15 +1,18 @@
 {
-  "name": "mapty-v1",
+  "name": "Mapty-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Map Your Daily Workouts",
   "default": "index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --no-scope-hoist --dist-dir ./dist"
+    "start": "snowpack dev",
+    "build": "snowpack build"
   },
-  "author": "saurabh",
+  "author": "sypanchal1810",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }
